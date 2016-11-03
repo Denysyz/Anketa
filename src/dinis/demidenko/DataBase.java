@@ -1,14 +1,7 @@
 package dinis.demidenko;
-
 import java.sql.*;
 
-
-
-/**
- * Created by dende on 30.10.2016.
- */
 public class DataBase {
-
     public Connection getDBConnection() {
         Connection con = null;
         String url = "jdbc:mysql://localhost:3306/anketa";
@@ -61,5 +54,4 @@ public class DataBase {
                 + " href=\"index.html\"><p id=\"ssi\">Назад</p></a></div>" + "</body>";
         return res;
     }
-
 }

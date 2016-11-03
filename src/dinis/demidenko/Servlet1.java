@@ -7,26 +7,14 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
-
-
 @WebServlet("/Servlet1")
 public class Servlet1 extends HttpServlet {
-
     String result = "";
     String resultNull = "";
     int k;
     int t = 0;
     public void doGet(HttpServletRequest request, HttpServletResponse response){
-
-        Work w = new Work();
         DataBase d = new DataBase();
-
-        File f = new File("C:\\Users\\dende\\Desktop\\text.txt");
-        try {
-            f.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         try {
             request.setCharacterEncoding("UTF-8");
         } catch (UnsupportedEncodingException e) {
@@ -41,7 +29,6 @@ public class Servlet1 extends HttpServlet {
         String[] music = request.getParameterValues("music[]");
         String coment = request.getParameter("coment");
         String resultSave = "";
-
         String[] arrName = {name, surname};
         String[] arrEvaluation  = {radio};
         String[] arrFreeTime = check;
@@ -91,9 +78,7 @@ public class Servlet1 extends HttpServlet {
             resultSave = resultSave + ", Коментар: " + arrResul[5][0] + ".";
         }
         if( k == 0){
-            w.writeFile(f, resultSave);    // дописуємо у файл
             d.addBD("insert into date values('" + resultSave + "');"); //дописуєм у базу
-
         }
         //блок генерує html при повному заповненні
         if( age.equals("")){
