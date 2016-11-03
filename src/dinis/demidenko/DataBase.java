@@ -11,7 +11,7 @@ public class DataBase {
 
     public Connection getDBConnection() {
         Connection con = null;
-        String url = "jdbc:mysql://localhost:3306/mybase";
+        String url = "jdbc:mysql://localhost:3306/anketa";
         String password = "0000";
         String username = "root";
         try {

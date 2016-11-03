@@ -6,7 +6,11 @@
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="anketa"/>
     <schema name="" catalog="mybase"/>
+    <table name="date" schema="" catalog="anketa" type="TABLE">
+      <column name="text" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+    </table>
     <table name="form" schema="" catalog="mybase" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <column name="name" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>

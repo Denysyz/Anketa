@@ -8,9 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 
-/**
- * Created by dende on 23.10.2016.
- */
+
 @WebServlet("/Servlet1")
 public class Servlet1 extends HttpServlet {
 
@@ -18,12 +16,10 @@ public class Servlet1 extends HttpServlet {
     String resultNull = "";
     int k;
     int t = 0;
-
     public void doGet(HttpServletRequest request, HttpServletResponse response){
 
         Work w = new Work();
         DataBase d = new DataBase();
-        d.addBD("insert into form values(1, 'best');");
 
         File f = new File("C:\\Users\\dende\\Desktop\\text.txt");
         try {
@@ -46,7 +42,6 @@ public class Servlet1 extends HttpServlet {
         String coment = request.getParameter("coment");
         String resultSave = "";
 
-
         String[] arrName = {name, surname};
         String[] arrEvaluation  = {radio};
         String[] arrFreeTime = check;
@@ -63,8 +58,7 @@ public class Servlet1 extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //блок генерує html коли не всы данні
-
+        //блок генерує html коли не всі данні
         if(name.equals("") | surname.equals("")){
             resultNull =  "<!DOCTYPE html><html><head><link href=\"styles.css\" type=\"text/css\""
                     + " rel=\"stylesheet\"><meta charset = \"UTF-8\"><title>Результат</title></head>"
@@ -98,11 +92,12 @@ public class Servlet1 extends HttpServlet {
         }
         if( k == 0){
             w.writeFile(f, resultSave);    // дописуємо у файл
-
-
-
+            d.addBD("insert into date values('" + resultSave + "');"); //дописуєм у базу
         }
         //блок генерує html при повному заповненні
+        if( age.equals("")){
+            age = "інформація відсутня";
+        }
         result = "<!DOCTYPE html><html><head><link href=\"styles.css\" type=\"text/css\""
                 + " rel=\"stylesheet\"><meta charset = \"UTF-8\"><title>Результат</title></head>"
                 + "<body><div id=\"resMain\"><p class=\"res\">" + surname + " " +  name + "</p><p class=\"res\">"
@@ -136,5 +131,4 @@ public class Servlet1 extends HttpServlet {
             System.out.println(resultSave);
         }
     }
-
 }
