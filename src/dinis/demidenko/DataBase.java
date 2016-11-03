@@ -33,5 +33,33 @@ public class DataBase {
             e.printStackTrace();
         }
     }
+    public ResultSet uploadBD(String str){
+        ResultSet r = null;
+        try {
+            Connection con = getDBConnection();
+            Statement statement = con.createStatement();
+            String query = str;
+            r = statement.executeQuery(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return r;
+    }
+    public String printRes(ResultSet rr){
+        String res = "";
+        res = "<!DOCTYPE html><html><head><link href=\"styles.css\" type=\"text/css\""
+                + " rel=\"stylesheet\"><meta charset = \"UTF-8\"><title>Результат</title></head>"
+                + "<body>";
+        try {
+            for(;rr.next();){
+                res = res + "<div class=\"divSave\">" + rr.getString("text") + "</div>";
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        res = res + "<div id=\"ssilkaRes\"><a"
+                + " href=\"index.html\"><p id=\"ssi\">Назад</p></a></div>" + "</body>";
+        return res;
+    }
 
 }

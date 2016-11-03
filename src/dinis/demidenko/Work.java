@@ -59,4 +59,27 @@ public class Work {
                 + " href=\"index.html\"><p id=\"ssi\">Назад</p></a></div>" + "</body>";
         return res;
     }
+
+    public String saveInAraayDB(File file, String[] arr){
+        arr = readFile(file).split(System.lineSeparator());
+        String res = "";
+        res = "<!DOCTYPE html><html><head><link href=\"styles.css\" type=\"text/css\""
+                + " rel=\"stylesheet\"><meta charset = \"UTF-8\"><title>Результат</title></head>"
+                + "<body>";
+        if(file.length() == 3){
+            System.out.println(33);
+        }else{
+            for(int i = 0; i < arr.length; i++){
+                if( arr[i].equals("")){
+                    System.out.println(123);
+                    continue;
+                }
+                res = res + "<div class=\"divSave\">" + arr[i] + "</div>";
+            }
+        }
+        res = res + "<div id=\"ssilkaRes\"><a"
+                + " href=\"index.html\"><p id=\"ssi\">Назад</p></a></div>" + "</body>";
+        return res;
+    }
+
 }

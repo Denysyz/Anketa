@@ -93,6 +93,7 @@ public class Servlet1 extends HttpServlet {
         if( k == 0){
             w.writeFile(f, resultSave);    // дописуємо у файл
             d.addBD("insert into date values('" + resultSave + "');"); //дописуєм у базу
+
         }
         //блок генерує html при повному заповненні
         if( age.equals("")){

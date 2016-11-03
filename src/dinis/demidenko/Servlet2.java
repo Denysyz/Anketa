@@ -17,12 +17,14 @@ public class Servlet2 extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Work w = new Work();
+        DataBase d = new DataBase();
         String[] ar = null;
         File file = new File("C:\\Users\\dende\\Desktop\\text.txt");
         response.setContentType("text/html");
         response.setCharacterEncoding("UTF-8");
         PrintWriter pw = response.getWriter();
-        pw.print(w.saveInAraay(file, ar));
+        pw.print(d.printRes(d.uploadBD("SELECT * FROM date")));
+        //pw.print(w.saveInAraay(file, ar));
         System.out.println(w.saveInAraay(file, ar));
     }
 }
