@@ -1,0 +1,194 @@
+body{
+    background-color: #82B6F9;
+}
+#main{
+    border: 2px solid #084;
+    width: 30%;
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #199941;
+}
+.bbbb{
+    font-size: 24px;
+    font-style: italic;
+    border: 2px solid #06B43D;
+    background-color: #F5ED50;
+    text-align: left;
+    margin: 20px 20px 30px 20px;
+    padding: 10px;
+}
+#field1{
+    margin-left:58px;
+    background-color: #FF9F62;
+    font-size: 18px;
+    color: #084;
+}
+#field2, #age1{
+    margin-left:0px;
+    background-color: #FF9F62;
+    font-size: 18px;
+    color: #084;
+}
+#BorderAge{
+    font-size: 24px;
+    font-style: italic;
+    border: 2px solid #06B43D;
+    background-color: #F5ED50;
+    text-align: left;
+    margin: 20px 20px 30px 20px;
+    padding: 10px;
+}
+
+
+
+#free{
+    border: 2px solid #06B43D;
+    margin: 20px 20px 30px 20px;
+    background-color: #F5ED50;
+    text-align: left;
+    padding: 10px;
+    font-size: 24px;
+    font-style: italic;
+}
+#freeP{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+#films{
+    border: 2px solid #06B43D;
+    margin: 20px 20px 30px 20px;
+    background-color: #F5ED50;
+    text-align: left;
+    padding: 10px;
+    font-size: 24px;
+    font-style: italic;
+}
+#filmsP{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+#filmsS{
+    background-color: #FF9F62;
+    font-size: 18px;
+    color: #084;
+}
+#music{
+    border: 2px solid #06B43D;
+    margin: 20px 20px 30px 20px;
+    background-color: #F5ED50;
+    text-align: left;
+    padding: 10px;
+    font-size: 24px;
+    font-style: italic;
+}
+#musicP{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+#musicS{
+    background-color: #FF9F62;
+    font-size: 18px;
+    color: #084;
+}
+#coment{
+    border: 2px solid #06B43D;
+    margin: 20px 20px 30px 20px;
+    background-color: #F5ED50;
+    text-align: left;
+    padding: 10px;
+    font-size: 24px;
+    font-style: italic;
+}
+#comentP{
+    width: 40%;
+    margin: 0 auto;
+    font-size: 24px;
+}
+#comentT{
+    background-color: #FF9F62;
+    font-size: 18px;
+    color: #084;
+}
+#but{
+    border: 2px solid #06B43D;
+    margin: 20px 20px 30px 20px;
+    background-color: #F5ED50;
+    padding: 10px;
+}
+.butB{
+    background-color: #FF9F62;
+    font-size: 18px;
+    color: #084;
+}
+#resMain{
+    border: 2px solid #084;
+    width: 30%;
+    min-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #199941;
+}
+.res{
+    font-size: 24px;
+    font-style: italic;
+    border: 2px solid #06B43D;
+    background-color: #F5ED50;
+    text-align: left;
+    margin: 20px 20px 30px 20px;
+    padding: 10px;
+}
+#comentRes{
+    font-size: 24px;
+    font-style: italic;
+    border: 2px solid #06B43D;
+    background-color: #00ffff;
+    text-align: left;
+    margin: 20px 20px 30px 20px;
+    padding: 5px;
+    overflow: auto;
+    max-height: 200px;
+    min-height: 200px;
+}
+#resNull{
+    width: 30%;
+    margin: 0 auto;
+    min-width: 300px;
+}
+#ssilkaRes{
+    border: 2px solid #084;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F5ED50;;
+    font-size: 24px;
+    font-style: italic;
+    text-align: left;
+    padding: 10px;
+    width: 30%;
+    min-width: 300px;
+}
+#ssi{
+    width: 70px;
+    margin: 0 auto;
+}
+.divSave{
+    font-size: 24px;
+    font-style: italic;
+    border: 2px solid #06B43D;
+    background-color: #F5ED50;
+    text-align: left;
+    margin: 20px 20px 30px 20px;
+    padding: 10px;
+}
+#lookAll{
+    border: 2px solid #084;
+    width: 200px;
+    float: left;
+    margin: 20px 20px 30px 20px;
+    background-color: #F5ED50;
+    padding: 10px;
+    padding-left: 45px;
+}

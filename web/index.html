@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>MyPage</title>
+</head>
+<body>
+<div id="lookAll">
+    <form action="Servlet2" method="get">
+        <input id="butSave" class="butB" type = "submit" name = "butSave" value="Переглянути все">
+    </form>
+
+</div>
+<div id="main">
+    <h1>Анкета</h1>
+    <form action = "Servlet1" method = "get">
+        <div class="bbbb" id="borderLogin" align = "right">
+            <label for = "login">Ім'я:</label>
+            <input id="field1" type = "text" name = "name" id = "login"/><br>
+            <label for = "password">Прізвище:</label>
+            <input id="field2" type = "text" name = "surname" id = "password"/>
+        </div>
+        <div class="bbbb" id="BorderAge">
+            Ваш вік?
+            <input id="age1" type = "text"  name = "age"/>
+        </div>
+        <div id="free">
+            <p id="freeP">Як проводите вільний час?</p>
+            <input type = "checkbox" name = "check[]" value = "читає книгу"/>Читаю книгу <br>
+            <input type = "checkbox" name = "check[]" value = "дивиться телевізор"/>Дивлюсь телеізор <br>
+            <input type = "checkbox" name = "check[]" value = "слухає музику"/>Слухаю музику <br>
+            <input type = "checkbox" name = "check[]" value = "гуляє з друзями"/>Гуляю з друзями <br>
+        </div>
+        <div id="films">
+            <p id="filmsP">Які фільми дивитеся?</p>
+            <select name = "film" id="filmsS">
+                <option value = "Фантастика">Фантастика</option>
+                <option value = "Комедія">Комедія</option>
+                <option value = "Детиктив">Детиктив</option>
+                <option value = "Документальний">Документальний</option>
+                <option value = "Жахи">Жахи</option>
+            </select>
+        </div>
+        <div id="music">
+            <p id="musicP">Яку музику слухаєте?</p>
+            <select id="musicS" name = "music[]" multiple = "multiple" size = "4">
+                <option value = "Поп">Поп</option>
+                <option value = "Рєп">Рєп</option>
+                <option value = "Рок">Рок</option>
+                <option value = "Класика">Класика</option>
+                <option value = "Джаз">Джаз</option>
+            </select>
+        </div>
+        <div id="coment">
+            <p id="comentP"><label for = "com">Коментар</label></p>
+            <textarea id="comentT" name = "coment" id = "com" rows = "4" cols = "30"></textarea> <br>
+        </div>
+        <div id="but">
+            <input class="butB" type = "submit" name = "butimage" value="Відправить">
+        </div>
+    </form>
+</div>
+</body>
+</html>
